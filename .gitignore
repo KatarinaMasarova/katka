@@ -1,0 +1,7 @@
+*.tmp
+temp/
+temp1.log
+temp2.log
+temp3.log
+*log
+!main.log
