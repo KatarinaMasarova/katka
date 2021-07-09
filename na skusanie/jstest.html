@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-wrapper {
+            margin: 50px auto 20px;
+            width: 40%;
+            /* border: 1px solid black; */
+            border-radius: 6px;
+            /* background-color: lightgray; */
+            padding: 30px;
+            box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.15);
+        }
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 25px;
+        }
+
+        input[type=submit] {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border: 0;
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            height: auto;
+        }
+    </style>
+<script>
+
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            // document.getElementById("show").style.display = '';
+            myForm.fname.focus();
+            return false;
+        }
+        else if (myForm.designation.value == "") {
+            alert("Designation must be filled out");
+            // document.getElementById("show").style.display = '';
+            myForm.designation.focus();
+            return false;
+        }
+        else if (myForm.location.value == "") {
+            alert("Name, designation and location must be filled out");
+            // document.getElementById("show").style.display = '';
+            myForm.location.focus();
+            return false;
+        }
+        else {
+            //document.write("<h1> Thanks!!!</h2>")
+            // window.open("thanks.html")  
+            alert("you are going to submit following details: Name: " + myForm.fname.value + 
+            " designation: " + myForm.designation.value + 
+            " location: " + myForm.location.value);
+            return true;
+        }
+    }
+</script>
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <h3 style="text-align: center;">Registration form</h3>
+        <form name="myForm" action="thanks.html" onsubmit="return validateForm()" method="post">
+        Name: 
+        <br>
+        <input type="text" name="fname">
+        Designation:  
+        <br>
+        <input type="text" name="designation">
+        Location:  
+        <br>
+        <input type="text" name="location">
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+
+<!-- <div id="show" style="display: none;">this is required</div> -->
+
+</body>
+</html>

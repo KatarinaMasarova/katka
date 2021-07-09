@@ -1,3 +1,46 @@
-h1 {
-    color: red;
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
+
+nav {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* 
+.form-wrapper {
+    border: 1px solid black;
+    border-radius: 30px;
+    width: 40%;
+    background-color: green;
+}
+
+form {
+    padding: 10px;
+}
+
+input, textarea {
+    width: 90%;
+}
+
+label {
+    display: block;
+} */

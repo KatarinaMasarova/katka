@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .form-wrapper {
+            margin: 50px auto 20px;
+            width: 40%;
+            /* border: 1px solid black; */
+            border-radius: 6px;
+            /* background-color: lightgray; */
+            padding: 30px;
+            box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.15);
+        }
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            height: 25px;
+        }
+
+        input[type=button] {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border: 0;
+            display: block;
+            width: 100px;
+            margin: 0 auto;
+            padding: 10px 20px;
+            height: auto;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 3px;
+        }
+    </style>
+<script>
+
+    function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            // document.getElementById("show").style.display = '';
+            myForm.fname.focus();
+            return false;
+        }
+
+        let math = myForm.math.value;
+        let science = myForm.science.value;
+        let computer = myForm.computer.value;
+
+        var array = [math, science, computer];
+        var arrayNum = array.map(i=>Number(i));
+
+        let total = arrayNum.reduce((pv, cv) => pv + cv, 0);
+        myForm.total.value = total;
+
+        let average = total/array.length;
+        myForm.percentage.value = average;
+
+        let max = Math.max(...arrayNum);
+        myForm.max.value = max;
+
+        console.log(max);
+
+        var location = prompt("enter your location");
+        if (location == "usa") {
+            alert("got special discount");
+        }
+        else {
+            alert(location);
+        }
+    }
+</script>
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <h3 style="text-align: center;">Student Results</h3>
+        <form name="myForm" action="thanks.html" method="post">
+        Name: 
+        <br>
+        <input type="text" name="fname">
+        <br>
+
+        <h4>Marks:</h4>
+        Math:  
+        <input type="number" name="math">
+        Science:  
+        <input type="number" name="science">
+        Computer:  
+        <input type="number" name="computer">
+        <br>
+
+        <h4>Result:</h4>
+        Total marks:
+        <input type="number" disabled name="total">
+        <br>
+        %Marks
+        <input type="number" disabled name="percentage">
+        <br>
+        Max. marks
+        <input type="number" disabled name="max">
+
+        <br>
+        <br>
+        <input type="button" value="Result" onclick="validateForm()" >
+        </form>
+    </div>
+
+<!-- <div id="show" style="display: none;">this is required</div> -->
+
+</body>
+</html>

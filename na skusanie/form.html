@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link src="js/script.js">
+    <title>Document</title>
+
+</head>
+<body>
+    <header>
+        <h1>registration form</h1>
+    </header>
+    <main>
+        <div class="form-wrapper">
+            <form action="thanks.html">
+                <label for="name">
+                    Name: <input type="text" name="name" required placeholder="your name here">
+                </label>
+                <label for="designation">
+                    Designation: 
+                    <select name="designation" id="des">
+                        <option value="1">developer</option>
+                        <option value="2">manager</option>
+                        <option value="3">graphic designer</option>
+                    </select>
+                </label>
+                <label for="location">
+                    Location: <input type="text" name="location" required>
+                </label>
+                <label for="message">
+                    Remarks: <textarea name="message" id="" cols="30" rows="10"></textarea>
+                </label>
+
+                <input type="submit" placeholder="submit">
+                <input type="button" value="click" onclick="jfun1()">
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>
