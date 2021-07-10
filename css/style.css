@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", "Montserrat", sans-serif;
 }
 
 .container {
@@ -116,22 +117,40 @@ footer {
     color: lightcyan;
 }
 
-/* 
+/* REGISTRATION */
+
 .form-wrapper {
-    border: 1px solid black;
-    border-radius: 30px;
+    margin: 50px auto;
     width: 40%;
+    max-width: 400px;
+    /* border: 1px solid black; */
+    border-radius: 6px;
+    /* background-color: lightgray; */
+    padding: 30px;
+    box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.15);
+}
+
+input {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type=submit] {
     background-color: green;
-}
-
-form {
-    padding: 10px;
-}
-
-input, textarea {
-    width: 90%;
-}
-
-label {
+    color: white;
+    font-weight: bold;
+    border: 0;
     display: block;
-} */
+    margin: 0 auto;
+    padding: 10px 20px;
+    height: auto;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 3px;
+}
