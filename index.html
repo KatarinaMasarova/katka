@@ -15,27 +15,35 @@
 <body>
     <header>
         <div class="slider">
-            <div class="img-wrapper"><img src="images/bg_img.jpg" alt=""></div>
-            <div class="img-wrapper"><img src="images/bg_img.jpg" alt=""></div>
-            <div class="img-wrapper"><img src="images/bg_img.jpg" alt=""></div>
+            <div class="img-wrapper img-wrapper-mean"><img src="images/mean.jpeg" alt=""></div>
+            <div class="img-wrapper img-wrapper-mern"><img src="images/mern.jpg" alt=""></div>
+            <div class="img-wrapper img-wrapper-java"><img src="images/java.jpg" alt=""></div>
         </div>
-        <nav class="container">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html"></a>All courses</a></li>
-                <li><a href="#">Registration</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact us</a></li>
+        <nav>
+            <ul class="container main-nav">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-link nav-dropdown">
+                    <p class="nav-link">All courses &nbsp; &#9660;</p>
+                
+                    <ul class="sub-nav">
+                        <li><a href="mean.html" class="nav-link">MEAN</a></li>
+                        <li><a href="mern.html" class="nav-link">MERN</a></li>
+                        <li><a href="java.html" class="nav-link">Java</a></li>
+                    </ul>
+                </li>
+                <li><a href="registration.html" class="nav-link">Registration</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="test">
         <div class="container">
-
+            <h1>Welcome to our course portal!</h1>
         </div>
     </main>
     <footer>
-        developed by Katarina Masarova
+        Designed and developed by Katarina Masarova. All rights reserved. &copy; 2021
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>

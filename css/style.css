@@ -1,5 +1,6 @@
-body {
+* {
     margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -9,13 +10,18 @@ body {
 
 nav {
     margin: 0 auto;
-    max-width: 1200px;
+    padding: 10px;
+    background-color: #26608e;
 }
 
 nav ul {
+    max-width: 1200px;
     padding: 0;
-    display: flex;
     justify-content: space-between;
+}
+
+.main-nav {
+    display: flex;
 }
 
 nav ul li {
@@ -23,9 +29,38 @@ nav ul li {
     margin: 5px;
 }
 
-nav ul li a {
+.nav-link {
+    color: lightcyan;
+    font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
+    transition: color 0.4s;
+}
+
+.nav-link:hover {
+    color: yellowgreen;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.sub-nav {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 35px;
+    left: -20px;
+    width: 170px;
+    /* text-align: center; */
+    background: #26608e;
+    padding-bottom: 6px;
+}
+
+.sub-nav li {
+    padding: 5px 10px 5px 20px;
 }
 
 /* .img-wrapper {
@@ -34,10 +69,28 @@ nav ul li a {
 } */
 
 .img-wrapper img {
-    width: 100%;
+    margin: 0 auto;
     height: 200px;
     object-fit: cover;
     object-position: center;
+}
+
+.img-wrapper-mean {
+    background-color: #333333;
+}
+
+.img-wrapper-mern {
+    background-color: #252d38;
+}
+
+.img-wrapper-java {
+    background-color: #252d38;
+    height: 200px !important;
+}
+
+.img-wrapper-java img {
+    height: 160px;
+    margin-top: 20px;
 }
 
 
@@ -48,6 +101,19 @@ nav ul li a {
 .slick-prev {
     left: 7px !important;
     z-index: 10;
+}
+
+
+.test {
+    min-height: calc(100vh - 290px);
+}
+
+footer {
+    text-align: center;
+    text-align: center;
+    padding: 10px 40px;
+    background-color: #252d38;
+    color: lightcyan;
 }
 
 /* 
