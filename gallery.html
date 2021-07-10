@@ -41,39 +41,28 @@
     </header>
 
 
-    <main class="test">
+    <main>
         <div class="container">
-            <div class="form-wrapper">
-                <h3 style="text-align: center;">Registration Form</h3>
-                <br>
-                <br>
-                <form name="myForm" action="thanks.html" method="post">
-                Name: 
-                <input type="text" name="name" required>
-                <br>
-                Location:  
-                <input type="text" name="location">
-                <br>
-                Email:  
-                <input type="emial" name="email" required>
-                <br>
-                Course:  
-                <select name="course" id="course">
-                    <option value="1">MEAN</option>
-                    <option value="2">MERN</option>
-                    <option value="3">Java</option>
-                </select>
-                <br>
-                <br>
-        
-                Remarks:
-                <br>
-                <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea>
-                <br>
-        
-                <br>
-                <input type="submit" value="Register" onclick="validateForm()" class="button">
-                </form>
+            <h1>Choose one or more of our courses and learn to code!</h1>
+            <div class="box-wrapper">
+                <div class="box">
+                    <a href="mean.html">
+                        <img src="images/mean.jpeg" alt="mean">
+                        <button type="button" class="button">Course details</button>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="mern.html">
+                        <img src="images/mern.jpg" alt="mern">
+                        <button type="button" class="button">Course details</button>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="java.html">
+                        <img src="images/java.jpg" alt="java">
+                        <button type="button" class="button">Course details</button>
+                    </a>
+                </div>
             </div>
         </div>
     </main>
