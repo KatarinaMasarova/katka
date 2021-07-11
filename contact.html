@@ -43,36 +43,46 @@
 
     <main class="test">
         <div class="container">
+            <h1>Contact details</h1>
+
+            <div class="flex">
+                <div class="contact-details">
+                    <h4>LVC Portal</h4>
+                    <p>Earth 1</p>
+                    <p>000 00 Milky Way Galaxy</p>
+                    <p>Universe</p>
+                    <br>
+                    <a href="mailto:email@email.com">email@email.com</a>
+                    <br>
+                    <a href="tel:123456789">123 456 789</a>
+
+                </div>
+                
+                <div class="contact-details">
+                    <iframe width="100%" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+
             <div class="form-wrapper">
-                <h3 style="text-align: center;">Registration Form</h3>
+                <h3 style="text-align: center;">Contact us!</h3>
                 <br>
                 <br>
-                <form name="myForm" action="thanks.html" method="post">
+                <form name="contactForm" action="thanks.html" method="post">
                     Name: 
                     <input type="text" name="name" required>
-                    <br>
-                    Location:  
-                    <input type="text" name="location">
                     <br>
                     Email:  
                     <input type="emial" name="email" required>
                     <br>
-                    Course:  
-                    <select name="course" id="course">
-                        <option value="1">MEAN</option>
-                        <option value="2">MERN</option>
-                        <option value="3">Java</option>
-                    </select>
-                    <br>
                     <br>
             
-                    Remarks:
+                    Message:
                     <br>
-                    <textarea name="remarks" id="remarks" cols="30" rows="10"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                     <br>
             
                     <br>
-                    <input type="submit" value="Register" onclick="validateForm()" class="button">
+                    <input type="submit" value="Send" onclick="validateForm()" class="button">
                 </form>
             </div>
         </div>

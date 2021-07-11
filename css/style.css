@@ -225,3 +225,17 @@ textarea {
     width: 100%;
     margin: 0 auto 16px;
 }
+
+
+
+/* CONTACT US */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.contact-details {
+    width: calc(50% - 20px);
+}
